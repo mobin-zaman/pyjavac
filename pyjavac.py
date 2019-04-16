@@ -10,7 +10,7 @@ for folder_name, sub_folders, file_names in os.walk(root_dir):
 
     for filename in file_names:
         if filename.endswith('.class'):
-            print('DELETING CLASS FILE: ' + folder_name + filename)
+            print('DELETING CLASS FILE: ' + folder_name + '/' +filename)
             os.remove(folder_name+'/'+filename)
 
 print('EXECUTING javac *.java  COMMAND....... ')
